@@ -1,4 +1,4 @@
-# ISLE 8 - Houdini image
+# ISLE 8 - Crayfits image
 
 Designed to used with:
 
