@@ -1,4 +1,4 @@
-# ISLE 8 - CrayFits image
+# ISLE 8 - Crayfits image
 
 Designed to used with:
 
@@ -20,7 +20,11 @@ To run the container, you'll need to bind mount one thing:
 
 * A `php.ini` file with output buffering enabled at `/usr/local/etc/php/php.ini`
 
-* docker run -d -p 8000:8000 -e FITS_WEBSERVICE_URI=http://localhost:8080/fits/examine -v /path/to/php.ini:/usr/local/etc/php/php.ini isle-crayfits
+You'll also want to set one environment variable, which affects configuration of the microservice
+
+* FITS_WEBSERVICE_URI - URI pointing to your `fitsservlet_container` instance
+
+`docker run -d -p 8000:8000 -e FITS_WEBSERVICE_URI=http://localhost:8080/fits/examine -v /path/to/php.ini:/usr/local/etc/php/php.ini isle-crayfits`
 
 ## Testing
 
