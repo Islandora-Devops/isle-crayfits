@@ -1,4 +1,4 @@
-FROM isle-crayfish-base
+FROM islandora/isle-crayfish-base:latest
 
 # Composer & Crayfits
 # @see: Composer https://github.com/composer/getcomposer.org/commits/master (replace hash below with most recent hash)
